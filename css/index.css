@@ -41,6 +41,7 @@ a {
 /*Inicio de Header*/
 .header{
     font-family: 'Rubik', sans-serif;
+    text-shadow: 0px 3px 3px rgb(39, 202, 148);
     background-color: black;
     padding: 16px;
     display: flex;
@@ -81,7 +82,8 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 
 .header__ul li {
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 8px;
+    padding: 5px;
     transition: all 0.3s;
 }
 
@@ -95,6 +97,10 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     .header {
         flex-direction: column;
         text-align: center;
+    }
+
+    .header__ul li {
+        padding: 0px;
     }
 }
 /* Fin de Header */
@@ -134,6 +140,7 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     font-size: 65px;
     text-decoration: underline;
     color: rgb(39, 202, 148);
+    text-shadow: 3px 3px 3px black;
     text-align: center;
     margin-top: 75px;
 }
@@ -156,7 +163,14 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     padding: 15px;
     margin-bottom: 10px;
     background-color: white;
+    transition: all 0.3s;
 }
+
+.news__article:hover {
+    transform: scale(1.1,1.1);
+    box-shadow: 0 0 10px 0px black ;
+}
+    
 
 .news__article img {
     width: 20rem;
@@ -171,11 +185,13 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     z-index: 1;
 }
 
+
 .sections-title {
     font-family: 'Carter One', cursive;
     font-size: 65px;
     text-decoration: underline;
     color: rgb(39, 202, 148);
+    text-shadow: 3px 3px 3px black;
     text-align: center;
     margin-top: 75px;
 }
@@ -196,6 +212,12 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     border-radius: 24px;
     background-color: white;
     margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.sections__item:hover {
+    transform: scale(1.1,1.1);
+    box-shadow: 0 0 10px 0px black ;
 }
 
 .sections__item  img {
@@ -222,6 +244,7 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 .main .main__sections__title {
     font-family: 'Carter One', cursive;
     color: rgb(39, 202, 148);
+    text-shadow: 3px 3px 3px black;
     font-size: 75px;
     text-decoration: underline;
     padding-bottom: 25px;
@@ -254,6 +277,7 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 .main__offers__title {
     font-family: 'Carter One', cursive;
     color: rgb(39, 202, 148);
+    text-shadow: 3px 3px 3px black;
     font-size: 75px;
     text-align: center;
     text-decoration: underline;
@@ -261,7 +285,6 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 /*Fin de Main - Ofertas*/
 
 /*Inicio de Main - Información*/
-
 .main .information {
     display: flex;
     flex-direction: column;
@@ -279,6 +302,7 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     text-align: center;
     text-decoration: underline;
     color: rgb(39, 202, 148);
+    text-shadow: 3px 3px 3px black;
 }
 
 .main .history p {
@@ -301,6 +325,8 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 .main .multimedia iframe {
     width: 1000px;
     height: 500px;
+    border: 10px solid rgb(39, 202, 148);
+    border-radius: 30px;
 }
 /*Fin de Main - Información*/
 
@@ -311,6 +337,7 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     text-align: center;
     text-decoration: underline;
     color: rgb(39, 202, 148);
+    text-shadow: 3px 3px 3px black;
 }
 
 .main .form {
