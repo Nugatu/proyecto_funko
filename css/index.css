@@ -15,7 +15,6 @@ body {
     color: black;
 }
 
-
 ul {
     list-style-type: none ;
 }
@@ -92,7 +91,6 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     background-color: white;
 }
 
-
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -113,7 +111,6 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     background-color: rgb(255, 255, 255);
     grid-area: main;
 }
-
 
 /*Inicio de Main - Index*/
 .main__website-name {
@@ -185,7 +182,6 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     text-align:center;
     z-index: 1;
 }
-
 
 .sections-title {
     font-family: 'Carter One', cursive;
