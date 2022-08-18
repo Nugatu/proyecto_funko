@@ -40,7 +40,7 @@ a {
 /* Fin Grid Site */
 
 /*Inicio de Header*/
-.header{
+.header {
     font-family: 'Rubik', sans-serif;
     text-shadow: 0px 3px 3px rgb(39, 202, 148);
     background-color: black;
@@ -95,6 +95,26 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     background-color: white;
     --bs-nav-link-color: white;
 }
+
+.header__button {
+    background-color: white;
+}
+
+@media (max-width: 992px) {
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .header .nav-link {
+        color: rgb(156, 63, 63);
+        text-align: center;
+        background-color: rgb(245, 245, 228);
+        color: black;
+        border-radius: 10px;
+    }
+
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -119,7 +139,6 @@ animation: logo-entrance 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 /*Inicio de Main - Index*/
 .main__website-name {
     border: solid 5px rgb(209, 31, 31);
-    border-radius: 10px;
     background-image:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url(../img/background-domain.jpg);
     border-radius: 32px;
     background-position:center;
