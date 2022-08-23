@@ -1,0 +1,12 @@
+
+/* Inicio Grid Site */
+#grid-site {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 125px 1fr 175px;
+}
+/* Fin Grid Site */
