@@ -1,0 +1,74 @@
+/*Inicio de Main - Contacto*/
+.main .title-contact h1 {
+    font-family: 'Carter One', cursive;
+    font-size: 65px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(39, 202, 148);
+    text-shadow: 3px 3px 3px black;
+}
+
+.form {
+    margin: 15px;
+    text-align: center;
+
+    &__data {
+        border: 3px solid black;
+        display: inline-block;
+        text-align: center;
+        width: 550px;
+        height: 675px;
+        position: relative;
+    }
+
+    &__data__item {
+        position: relative;
+        margin: 10px;
+        padding: 35px;
+    }
+
+    &__data__item label {
+        font-family: 'Carter One', cursive;
+        font-size: 25px;
+        position: absolute;
+        left: 25px;
+    }
+
+    & .form__data__item input {
+        position: absolute;
+        font-size: 25px;
+        left: 150px;
+    }
+
+    &__data__comment {
+        position: relative;
+    }
+
+    
+    &__data__comment label {
+    font-family: 'Carter One', cursive;
+    font-size: 25px;
+    margin-top: 55px;
+    position: absolute;
+    top:0 ;
+    left: 35px;
+}
+
+    &__data__comment textarea {
+    width: 90%;
+    font-size: 20px;
+    margin-top: 15px;
+    position: absolute;
+    top: 100px ;
+    left: 25px;
+}
+
+    &__data__textarea-input {   
+    position: absolute;
+    margin: 10px;
+    bottom:0 ;
+    right: 15px;
+    font-size: 20px;
+}
+}
+/*Fin de Main - Contacto*/

@@ -1,4 +1,13 @@
+@charset "UTF-8";
 /* MISC */
+/* Inicio Grid Site */
+#grid-site {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 125px 1fr 175px; }
+
+/* Fin Grid Site */
 /* Inicio Normalizadores*/
 * {
   margin: 0;
@@ -20,15 +29,14 @@ a {
   text-decoration: none;
   color: inherit; }
 
-/* Fin Normalizadores */
-/* Inicio Grid Site */
-#grid-site {
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-columns: auto;
-  grid-template-rows: 125px 1fr 175px; }
+.main {
+  padding: 35px 50px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  grid-area: main; }
 
-/* Fin Grid Site */
+/* Fin Normalizadores */
 /* PARTIALAS */
 /*Inicio de Header*/
 .header {
@@ -80,4 +88,248 @@ a {
     padding: 0px; } }
 
 /* Fin de Header */
+/*Inicio de Footer*/
+.footer {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  grid-area: footer; }
+  .footer__networks {
+    padding: 5px 0px; }
+  .footer__rights {
+    font-size: 25px;
+    padding-top: 5px; }
+  .footer img {
+    margin: 15px;
+    width: 40px;
+    height: 40px; }
+
+/*Fin de Footer*/
 /* VIEWS */
+/*Inicio de Main - Index*/
+.website-name {
+  border: solid 5px #d11f1f;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/background-domain.jpg);
+  border-radius: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .website-name h1 {
+    text-align: center;
+    font-size: 125px;
+    font-family: 'Carter One', cursive;
+    color: #d11f1f;
+    -webkit-text-stroke: 3px black; }
+
+.news-title {
+  font-family: 'Carter One', cursive;
+  font-size: 65px;
+  text-decoration: underline;
+  color: #27ca94;
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+  margin-top: 75px; }
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin: 25px;
+  text-align: center;
+  gap: 15px; }
+  .news__article {
+    width: 360px;
+    height: 424px;
+    border: solid  7px black;
+    border-radius: 24px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    transition: all 0.3s; }
+  .news__article:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 10px 0px black; }
+  .news__article img {
+    width: 15rem;
+    height: 20rem; }
+  .news__article h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    z-index: 1; }
+
+.sections-title {
+  font-family: 'Carter One', cursive;
+  font-size: 65px;
+  text-decoration: underline;
+  color: #27ca94;
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+  margin-top: 75px; }
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin: 25px;
+  gap: 15px; }
+  .sections__item {
+    border: solid  7px black;
+    border-radius: 24px;
+    background-color: white;
+    margin-bottom: 10px;
+    transition: all 0.3s; }
+  .sections__item:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 10px 0px black; }
+  .sections__item img {
+    width: 10rem;
+    height: 15rem;
+    margin: 1rem; }
+  .sections__item h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    z-index: 1; }
+
+/*Fin de Main - Index*/
+/*Inicio de Main - Productos*/
+.main__sections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .main__sections__title {
+    font-family: 'Carter One', cursive;
+    color: #27ca94;
+    text-shadow: 3px 3px 3px black;
+    font-size: 75px;
+    text-decoration: underline;
+    padding-bottom: 25px; }
+  .main__sections__items {
+    width: 350px;
+    height: 500px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 20px; }
+  .main__sections__items li {
+    padding: 20px;
+    text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .main .main__sections {
+    align-items: center; } }
+
+/*Fin de Main - Productos*/
+/*Inicio de Main - Ofertas*/
+.main__offers__title {
+  font-family: 'Carter One', cursive;
+  color: #27ca94;
+  text-shadow: 3px 3px 3px black;
+  font-size: 75px;
+  text-align: center;
+  text-decoration: underline; }
+
+/*Fin de Main - Ofertas*/
+/*Inicio de Main - Información*/
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.history {
+  margin: 35px; }
+  .history p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    padding: 25px; }
+
+.title-history {
+  font-family: 'Carter One', cursive;
+  font-size: 65px;
+  text-align: center;
+  text-decoration: underline;
+  color: #27ca94;
+  text-shadow: 3px 3px 3px black; }
+
+.multimedia {
+  display: flex;
+  flex-direction: column; }
+  .multimedia h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    text-align: center; }
+  .multimedia iframe {
+    width: 1000px;
+    height: 500px;
+    border: 10px solid #27ca94;
+    border-radius: 30px; }
+
+/*Fin de Main - Información*/
+/*Inicio de Main - Contacto*/
+.main .title-contact h1 {
+  font-family: 'Carter One', cursive;
+  font-size: 65px;
+  text-align: center;
+  text-decoration: underline;
+  color: #27ca94;
+  text-shadow: 3px 3px 3px black; }
+
+.form {
+  margin: 15px;
+  text-align: center; }
+  .form__data {
+    border: 3px solid black;
+    display: inline-block;
+    text-align: center;
+    width: 550px;
+    height: 675px;
+    position: relative; }
+  .form__data__item {
+    position: relative;
+    margin: 10px;
+    padding: 35px; }
+  .form__data__item label {
+    font-family: 'Carter One', cursive;
+    font-size: 25px;
+    position: absolute;
+    left: 25px; }
+  .form .form__data__item input {
+    position: absolute;
+    font-size: 25px;
+    left: 150px; }
+  .form__data__comment {
+    position: relative; }
+  .form__data__comment label {
+    font-family: 'Carter One', cursive;
+    font-size: 25px;
+    margin-top: 55px;
+    position: absolute;
+    top: 0;
+    left: 35px; }
+  .form__data__comment textarea {
+    width: 90%;
+    font-size: 20px;
+    margin-top: 15px;
+    position: absolute;
+    top: 100px;
+    left: 25px; }
+  .form__data__textarea-input {
+    position: absolute;
+    margin: 10px;
+    bottom: 0;
+    right: 15px;
+    font-size: 20px; }
+
+/*Fin de Main - Contacto*/

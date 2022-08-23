@@ -1,0 +1,27 @@
+/*Inicio de Footer*/
+.footer {
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    background-color: black;
+    padding: 10px; 
+    text-align: center;
+    font-size: 25px;
+    grid-area: footer; 
+
+    &__networks {
+        padding: 5px 0px;
+    }
+
+    &__rights {
+        font-size: 25px;
+        padding-top: 5px;
+        
+    }
+
+    & img {
+        margin: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
+/*Fin de Footer*/
