@@ -1,0 +1,24 @@
+$font-sizes: (
+    text-xl: 65px,
+    text-lg: 35px,
+    text-md: 25px,
+    text-sm: 20px,
+);
+
+@each $key, $val in $font-sizes {
+    .#{key} {
+        font-size: $val;
+    }
+}
+
+$colors: (
+    primary: rgb(39, 202, 148),
+    secondary: white,    
+    alternative: rgb(209, 31, 31),  
+);
+
+@each $key, $val in $colors {
+    .#{key} {
+        color: $val;
+    }
+}

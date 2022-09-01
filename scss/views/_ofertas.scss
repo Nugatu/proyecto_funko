@@ -3,7 +3,7 @@
     font-family: 'Carter One', cursive;
     color: rgb(39, 202, 148);
     text-shadow: 3px 3px 3px black;
-    font-size: 75px;
+    font-size: map-get($font-sizes , text-xl);
     text-align: center;
     text-decoration: underline;
 }

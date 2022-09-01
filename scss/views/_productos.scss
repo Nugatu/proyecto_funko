@@ -8,7 +8,7 @@
         font-family: 'Carter One', cursive;
         color: rgb(39, 202, 148);
         text-shadow: 3px 3px 3px black;
-        font-size: 75px;
+        font-size: map-get($font-sizes , text-xl);
         text-decoration: underline;
         padding-bottom: 25px;
     }
@@ -21,12 +21,12 @@
         padding: 15px;
         border: 5px solid black;
         border-radius: 20px;
-        
-    }
 
-    &__items li{
-        padding: 20px;
-        text-decoration: underline;
+        li{
+            padding: 20px;
+            text-decoration: underline;
+        }
+        
     }
 }
 

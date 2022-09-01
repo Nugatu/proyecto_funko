@@ -18,7 +18,7 @@
 
 .title-history {
     font-family: 'Carter One', cursive;
-    font-size: 65px;
+    font-size: map-get($font-sizes , text-xl);
     text-align: center;
     text-decoration: underline;
     color: rgb(39, 202, 148);

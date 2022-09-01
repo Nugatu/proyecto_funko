@@ -1,6 +1,9 @@
 /* MISC */
+@import './misc/variables';
+@import './misc/mixins';
 @import './misc/grid';
 @import './misc/normalize';
+
 /* PARTIALAS */
 
 @import './partials/header';
@@ -8,7 +11,7 @@
 
 /* VIEWS */
 
-@import './views/index';
+@import './views/main';
 @import './views/productos';
 @import './views/ofertas';
 @import './views/informacion';

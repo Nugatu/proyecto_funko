@@ -1,7 +1,7 @@
 /*Inicio de Main - Contacto*/
 .main .title-contact h1 {
     font-family: 'Carter One', cursive;
-    font-size: 65px;
+    font-size: map-get($font-sizes , text-xl);
     text-align: center;
     text-decoration: underline;
     color: rgb(39, 202, 148);
@@ -25,34 +25,33 @@
         position: relative;
         margin: 10px;
         padding: 35px;
-    }
 
-    &__data__item label {
-        font-family: 'Carter One', cursive;
-        font-size: 25px;
-        position: absolute;
-        left: 25px;
-    }
+        label {
+            font-family: 'Carter One', cursive;
+            font-size: 25px;
+            position: absolute;
+            left: 25px;
+        }
 
-    & .form__data__item input {
-        position: absolute;
-        font-size: 25px;
-        left: 150px;
+        input {
+            position: absolute;
+            font-size: 25px;
+            left: 150px;
+        }
     }
 
     &__data__comment {
         position: relative;
-    }
 
-    
-    &__data__comment label {
-    font-family: 'Carter One', cursive;
-    font-size: 25px;
-    margin-top: 55px;
-    position: absolute;
-    top:0 ;
-    left: 35px;
-}
+        label {
+            font-family: 'Carter One', cursive;
+            font-size: 25px;
+            margin-top: 55px;
+            position: absolute;
+            top:0 ;
+            left: 35px;
+        }
+    }
 
     &__data__comment textarea {
     width: 90%;

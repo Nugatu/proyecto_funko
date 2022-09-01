@@ -1,11 +1,11 @@
 /*Inicio de Footer*/
 .footer {
     font-family: 'Rubik', sans-serif;
-    color:white;
+    color: map-get($colors , secondary);
     background-color: black;
     padding: 10px; 
     text-align: center;
-    font-size: 25px;
+    font-size: map-get($font-sizes , text-md);
     grid-area: footer; 
 
     &__networks {
@@ -13,7 +13,7 @@
     }
 
     &__rights {
-        font-size: 25px;
+        font-size: map-get($font-sizes , text-md);
         padding-top: 5px;
         
     }
