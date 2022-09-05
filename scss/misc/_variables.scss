@@ -1,8 +1,10 @@
 $font-sizes: (
-    text-xl: 65px,
+    text-xxl: 65px,
+    text-xl: 45px,
     text-lg: 35px,
     text-md: 25px,
     text-sm: 20px,
+    text-xs: 15px,
 );
 
 @each $key, $val in $font-sizes {

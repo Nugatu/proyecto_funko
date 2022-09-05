@@ -8,17 +8,16 @@
 
 .history {
     margin: 35px;
-
     & p {
         font-family: 'Rubik', sans-serif;
-        font-size: 35px;
+        font-size: map-get($font-sizes , text-md);
         padding: 25px;
     }
 }
 
 .title-history {
     font-family: 'Carter One', cursive;
-    font-size: map-get($font-sizes , text-xl);
+    font-size: map-get($font-sizes , text-xxl);
     text-align: center;
     text-decoration: underline;
     color: rgb(39, 202, 148);

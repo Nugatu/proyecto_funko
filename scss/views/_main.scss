@@ -7,34 +7,35 @@
         background-position:center;
         background-repeat: no-repeat;
         background-size:cover;
+        margin-bottom: 75px;
 
         & h1 {
             text-align: center;
             font-size: 125px;
             font-family: 'Carter One', cursive;
             color: map-get($colors , alternative);
-            -webkit-text-stroke: 3px black;
+            font-weight: bold;
+            -webkit-text-stroke: 4px black;
         }
     }
 
 .news-title {
     font-family: 'Carter One', cursive;
-    font-size: map-get($font-sizes , text-xl);
+    font-size: map-get($font-sizes , text-xxl);
     text-decoration: underline;
     color: map-get($colors , primary);
     text-shadow: 3px 3px 3px black;
     text-align: center;
-    margin-top: 75px;
 }
 
-.news {
-    @include flex (row, wrap, space-evenly, stretch, 15px);
-    padding: 15px;
+#news .news { 
+    @include flex (row, wrap, space-evenly, stretch, 15px); 
     margin: 25px;
     text-align: center;
 
     &__article  {
-        @include sizes (360px, 424px);
+        @include sizes (360px, 480px);
+        @include flex (row, wrap, space-evenly, center, 0px); 
         border: solid  7px black;
         border-radius: 24px;
         padding: 15px;
@@ -48,8 +49,7 @@
         }
 
         img {
-            width: 15rem;
-            height: 20rem;
+            @include sizes (240px, 320px);
         }
 
         h3 {
@@ -63,7 +63,7 @@
 
 .sections-title {
     font-family: 'Carter One', cursive;
-    font-size: map-get($font-sizes , text-xl);
+    font-size: map-get($font-sizes , text-xxl);
     text-decoration: underline;
     color: map-get($colors , primary);
     text-shadow: 3px 3px 3px black;
@@ -85,11 +85,11 @@
 
         &:hover {
             transform: scale(1.1,1.1);
-            box-shadow: 0 0 10px 0px black ;
+            box-shadow: 0 0 10px 0px black;
         }
 
         img {
-            @include sizes (10rem, 15rem);
+            @include sizes (160px, 240px);
             margin: 1rem;
         }
     
@@ -102,4 +102,121 @@
         }
     }
 }
+.marvel:hover {
+    background-color: rgb(239, 160, 16);
+    color: white;
+}
+
+.star-wars:hover {  
+    background-color:  rgb(30, 113, 194);
+    color: white;
+}
+
+.harry-potter:hover {
+    background-color: map-get($colors , alternative);
+    color: white
+}
+
+.anime:hover {
+    background-color: rgb(145, 78, 142);
+    color: white;
+}
+
+.movies:hover {
+    background-color: rgb(3, 160, 98);
+    color: white
+}
+
+/*Inicio Responsive - Index*/
+
+@media (max-width: 1024px) {
+        body {width: auto;
+
+        }
+    }
+
+@media (max-width: 768px) {
+        .website-name h1 {
+            font-size: 85px;
+            font-weight: normal;
+            -webkit-text-stroke: 3px black;
+        }
+
+        .news-title {
+            font-size: 55px;
+        }
+
+        .sections-title {
+            font-size: 55px;
+        }
+    }  
+    
+    @media (max-width: 480px) {
+        .website-name {
+            margin-bottom: 65px;
+
+            h1 {
+                font-size: map-get($font-sizes , text-xxl);
+                font-weight: normal;
+                -webkit-text-stroke: 3px black;
+            }
+        }
+        
+        .news-title {
+            font-size: map-get($font-sizes , text-xl);
+        }
+
+        .sections-title {
+            font-size: map-get($font-sizes , text-xl);
+        }
+
+        #news .news__article  {
+            @include sizes (300px, 420px);
+            border: solid  5px black;
+    
+            img {
+                @include sizes (200px, 280px);
+            }
+    
+            h3 {
+                font-size: map-get($font-sizes , text-sm);
+            }
+        }
+    }
+    
+    @media (max-width: 360px) {
+
+        .website-name { 
+            margin-bottom: 45px;
+
+            h1 {
+                font-size: map-get($font-sizes , text-xl);
+                font-weight: normal;
+                -webkit-text-stroke: 3px black;
+            }
+        }
+
+        .news-title {
+            font-size: map-get($font-sizes , text-lg);
+        }
+
+        .sections-title {
+            font-size: map-get($font-sizes , text-lg);
+        }
+
+        #news .news__article  {
+            @include sizes (280px, 400px);
+            border: solid  5px black;
+    
+            img {
+                @include sizes (180px, 260px);
+            }
+    
+            h3 {
+                font-size: map-get($font-sizes , text-sm);
+            }
+        }
+    }  
+
+/*Fin Responsive - Index*/
 /*Fin de Main - Index*/

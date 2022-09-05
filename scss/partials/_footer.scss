@@ -5,23 +5,32 @@
     background-color: black;
     padding: 10px; 
     text-align: center;
-    font-size: map-get($font-sizes , text-md);
     grid-area: footer; 
 
     &__networks {
+        font-size: map-get($font-sizes, text-md);
         padding: 5px 0px;
     }
 
     &__rights {
-        font-size: map-get($font-sizes , text-md);
+        font-size: map-get($font-sizes , text-sm);
         padding-top: 5px;
         
     }
 
     & img {
         margin: 15px;
-        width: 40px;
-        height: 40px;
+        @include sizes (40px, 40px);
+    }
+
+@media (max-width: 360px) {
+    .footer__networks {
+        font-size: map-get($font-sizes, text-sm);
+            }
+    .footer__rights {
+        font-size: map-get($font-sizes, text-xs);
+    }
+        
     }
 }
 /*Fin de Footer*/

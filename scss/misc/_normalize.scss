@@ -13,6 +13,12 @@ body {
     width: 100%;
     min-height: 100vh;
     color: black;
+    line-height: 1.5;
+    font-weight: inherit;
+}
+
+img {
+    width: 100%;
 }
 
 ul {
@@ -22,14 +28,20 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+
 }
 
 .main {
     padding: 35px 50px;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color:map-get($colors , secondary);
     grid-area: main;
 }
+
 /* Fin Normalizadores */
 
