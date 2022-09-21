@@ -17,6 +17,7 @@ $colors: (
     primary: rgb(39, 202, 148),
     secondary: white,    
     alternative: rgb(209, 31, 31),  
+    alternative2: rgb(3, 160, 98),
 );
 
 @each $key, $val in $colors {
