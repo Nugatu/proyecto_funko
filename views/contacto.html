@@ -41,25 +41,25 @@
             <section class="title-contact">
                 <h1>¡Escríbenos!</h1>
             </section>
-            <section class="form">
+            <section class="form grid-contact">
                 <form class="form__data" action="#">
-                    <div class="form__data__item">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="">
+                    <div class="mb-3 form__data__item form__data__name">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
                     </div>
-                    <div class="form__data__item">
-                        <label for="correo">Correo:</label>
-                        <input type="email" name="correo" required>
+                    <div class="mb-3 form__data__item form__data__phone">
+                        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" required>
                     </div>
-                    <div class="form__data__item">
-                        <label for="telefono">Teléfono:</label>
-                        <input type="number" name="telefono" id="">
-                    </div>                             
-                    <div class="form__data__comment">
-                        <label for="comentario">Comentario:</label>
-                        <textarea name="comentario" id="" cols="30" rows="10"></textarea>   
-                    </div> 
-                    <input class="form__data__textarea-input" type="submit" value="Enviar">              
+                    <div class="mb-3 form__data__item form__data__phone">
+                        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3 form__data__comment">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <input class="form__data__textarea-input" type="submit" value="Enviar"> 
                 </form>
             </section>
         </main>

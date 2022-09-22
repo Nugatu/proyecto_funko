@@ -1,5 +1,30 @@
 /*Inicio de Main - Contacto*/
-.main .title-contact h1 {
+/*Grid*/
+#grid-contact {
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "mail"
+    "phone"
+    "comment";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+}
+
+.form__data__name {
+    grid-area: name;
+}
+
+.form__data__mail {
+    grid-area: mail;
+}
+
+.form__data__phone {
+    grid-area: phone;
+}
+
+/*Formulario de contacto*/
+.title-contact h1 {
     font-family: 'Carter One', cursive;
     font-size: map-get($font-sizes , text-xxl);
     text-align: center;
@@ -9,65 +34,98 @@
 }
 
 .form {
-    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
+    margin: 25px;
+
 
     &__data {
+        @include sizes (600px, 750px);
         border: 3px solid black;
-        display: inline-block;
         text-align: center;
-        width: 550px;
-        height: 675px;
-        position: relative;
+        border: 3px solid black;
+        border-radius: 15px;
     }
 
     &__data__item {
-        position: relative;
-        margin: 10px;
-        padding: 35px;
+        padding: 15px;
+        text-align: start;
 
         label {
             font-family: 'Carter One', cursive;
             font-size: 25px;
-            position: absolute;
-            left: 25px;
         }
 
         input {
-            position: absolute;
             font-size: 25px;
-            left: 150px;
+            border: 1px solid black;
         }
     }
 
     &__data__comment {
-        position: relative;
+        grid-area: comment;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding: 15px;
+        text-align: start;
 
         label {
             font-family: 'Carter One', cursive;
             font-size: 25px;
-            margin-top: 55px;
-            position: absolute;
-            top:0 ;
-            left: 35px;
         }
     }
 
-    &__data__comment textarea {
-    width: 90%;
-    font-size: 20px;
-    margin-top: 15px;
-    position: absolute;
-    top: 100px ;
-    left: 25px;
+        textarea {
+            font-size: 20px;
+            border: 1px solid black;
+    }
+
+    &__data__textarea-input {
+        font-size: 25px;
+        padding: 0px 5px;
+        font-family: 'Carter One', cursive;
+        background-color: map-get($colors , primary);
+        
+    }
 }
 
-    &__data__textarea-input {   
-    position: absolute;
-    margin: 10px;
-    bottom:0 ;
-    right: 15px;
-    font-size: 20px;
+/*Responsive*/
+@media (max-width: 768px) {
+    .title-contact h1 {
+        font-size: 55px;
+    }
+    
+    .form__data {
+        @include sizes (480px, 750px);
+    }
 }
+
+@media (max-width: 560px) {
+    .form__data {
+        @include sizes (360px, 750px);
+    }
+}
+
+@media (max-width: 480px) {
+    .title-contact h1 {
+        font-size: map-get($font-sizes , text-xl);
+    }
+    .form__data {
+        @include sizes (300px, 750px);
+    }
+}
+
+@media (max-width: 360px) {
+    .title-contact h1 {
+        font-size: map-get($font-sizes , text-lg);
+    }
+    .form__data {
+        @include sizes (240px, 750px);
+    }
 }
 /*Fin de Main - Contacto*/
