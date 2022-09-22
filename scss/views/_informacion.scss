@@ -1,4 +1,8 @@
 /*Inicio de Main - Información*/
+.history-main {
+    @include flex (column, wrap, space-evenly, stretch, 15px); 
+}
+
 .information {
     display: flex;
     flex-direction: column;
@@ -7,8 +11,9 @@
 }
 
 .history {
-    margin: 35px;
-        p {
+    margin: 5px;
+
+    p {
         font-family: 'Rubik', sans-serif;
         font-size: map-get($font-sizes , text-sm);
         padding: 5px 15px 0px 15px;
@@ -33,19 +38,98 @@
 }
 
 .multimedia {
-    @include flex (column, wrap, space-evenly, stretch, 15px); 
+    @include flex (column, wrap, center, center, 15px); 
+
+    img{
+        @include sizes (900px, 900px);
+    };
 
     iframe {
-        @include sizes (800px, 400px);
+        @include sizes (1000px, 500px);
         border: 10px solid rgb(39, 202, 148);
         border-radius: 30px;
     }
 }
 
 /*Responsive*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .multimedia {
+        img {
+            @include sizes (720px, 720px);
+        };
+
+        iframe {
+            @include sizes (800px, 400px);
+        }
+    }
+}  
+
+@media (max-width: 864px) {
     .title-history {
         font-size: 55px;
     }
+
+    .multimedia {
+        img {
+            @include sizes (540px, 540px);
+        };
+
+        iframe {
+            @include sizes (600px, 300px);
+        }
+    }
+} 
+
+@media (max-width: 768px) {
+
+    .multimedia {
+        img {
+            @include sizes (500px, 500px);
+        };
+
+        iframe {
+            @include sizes (500px, 500px);
+        }
+    }
 }  
+
+@media (max-width: 578px) {
+
+    .multimedia {
+        img {
+            @include sizes (400px, 400px);
+        };
+
+        iframe {
+            @include sizes (400px, 400px);
+        }
+    }
+}  
+
+@media (max-width: 480px) {
+
+    .multimedia {
+        img {
+            @include sizes (325px, 325px);
+        };
+
+        iframe {
+            @include sizes (325px, 325px);
+        }
+    }
+}
+
+@media (max-width: 380px) {
+
+    .multimedia {
+        img {
+            @include sizes (275px, 275px);
+        };
+
+        iframe {
+            @include sizes (275px, 275px);
+        }
+    }
+}
+
 /*Fin de Main - Información*/
